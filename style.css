@@ -81,10 +81,11 @@ section h1 {
   font-size: 3rem;
   margin: 20px;
 }
-section h2 {
+h2 {
   font-size: 40px;
   text-align: center;
   letter-spacing: 10px;
+  color: var(--color-darkgray);
 }
 section .text-container {
   display: flex;
@@ -96,7 +97,7 @@ section .text-container .text-box {
   background: var(--color-green);
   border-radius: 8px;
   opacity: 80%;
-  height: 600px;
+  height: 700px;
   width: 400px;
   
 }
@@ -147,4 +148,25 @@ section .text-container .text-box h3 {
 
 img {
   border-radius: 8px 8px 0px 0px;
+}
+
+.button {
+  transition-duration: 0.4s;
+  background-color: var(--color-darkgray);
+  color: var(--color-greengray);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  border: 2px solid var(--color-darkgray);
+  max-height: 40px;
+  padding: 10px;
+  max-width: 200px;
+  margin: auto;
+}
+
+.button:hover {
+  color: var(--color-greengray);
+  background-color: var(--color-green);
+  cursor: pointer;
+  border: 2px solid var(--color-greengray)
 }
