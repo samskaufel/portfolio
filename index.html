@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S K A U F E L</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S K A U F E L</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <header>
       <nav>
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="active">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
       </nav>
     </header>
     <section id="home">
       <div class="container reveal">
+        <img
+          src="img/profile-portrait.jpeg"
+          class="profile-portrait"
+          alt="Sam Skaufel's portrait"
+        />
         <h1>Sam Skaufel</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolore. Autem fuga incidunt officia laudantium voluptatem corrupti, nihil libero ea.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+        dolore. Autem fuga incidunt officia laudantium voluptatem corrupti,
+        nihil libero ea.
       </div>
     </section>
     <section id="about">
       <div class="container reveal">
-        <h2>About</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptatibus, corporis 
-          impedit sunt laborum atque dolorum similique nobis magni. Tempora quidem adipisci ab 
-          reprehenderit fugit sed rerum sequi accusantium deleniti vero deserunt necessitatibus 
-          officia cumque magni, molestias praesentium soluta ipsum doloribus! Neque eum commodi 
-          fuga deleniti, impedit molestias accusamus esse dolor quisquam voluptate minus saepe in 
-          suscipit asperiores explicabo consectetur qui velit accusantium officiis animi! Placeat, 
-          autem. Tempora a veniam officiis velit enim facilis inventore ullam eum delectus unde quasi 
-          quo saepe dolores, culpa iste labore obcaecati deleniti nobis ad eos magnam ipsum alias! 
-          Temporibus voluptas in quos at incidunt?</p>
-          <br />
-        <p>Skills:</p>
+        <h2>about</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+          voluptatibus, corporis impedit sunt laborum atque dolorum similique
+          nobis magni. Tempora quidem adipisci ab reprehenderit fugit sed rerum
+          sequi accusantium deleniti vero deserunt necessitatibus officia cumque
+          magni, molestias praesentium soluta ipsum doloribus! Neque eum commodi
+          fuga deleniti, impedit molestias accusamus esse dolor quisquam
+          voluptate minus saepe in suscipit asperiores explicabo consectetur qui
+          velit accusantium officiis animi! Placeat, autem. Tempora a veniam
+          officiis velit enim facilis inventore ullam eum delectus unde quasi
+          quo saepe dolores, culpa iste labore obcaecati deleniti nobis ad eos
+          magnam ipsum alias! Temporibus voluptas in quos at incidunt?
+        </p>
+        <br />
+        <p>s k i l l s:</p>
+        <br />
         <ul>
           <li>HTML5</li>
           <li>CSS, SCCS, Bootstrap</li>
@@ -46,57 +58,124 @@
         </ul>
       </div>
     </section>
-  
+
     <section id="projects">
       <div class="container reveal">
         <h2>Projects</h2>
         <div class="text-container">
           <div class="text-box">
+            <img
+              src="img/pokedex-main.png"
+              class="pokedex"
+              alt="screenshot of Pokedex application"
+            />
             <h3>Pokedex</h3>
             <p>
-              This small web application interfaces with an external Pokemon API using AJAX. This app
-              displays a list of 150 Pokemon, and upon user action (i.e., clicking
-              on a Pokemon), user can view details for that Pokemon.
+              This small web application interfaces with an external Pokemon API
+              using AJAX. This app displays a list of 150 Pokemon, and upon user
+              action (i.e., clicking on a Pokemon), user can view details for
+              that Pokemon.
             </p>
+            <p>Technologies:</p>
+            <p>HTML, JavaScript, jQuery, Bootstrap, and interfaces with an external 
+              Pokemon API using AJAX. </p>
+            <a
+              href="https://github.com/samskaufel/Pokedex"
+              target="_blank"
+              class="button"
+              >See project on GitHub</a
+            >
           </div>
           <div class="text-box">
             <h3>myFlix API</h3>
             <p>
-              The server-side component of the web application, "myFlix". The web
-              application will provide users with the access to information about
-              different movies, directors, and genres. Users will be able to sign
-              up, update their personal information, and create a list of their
-              favorite movies.
+              The server-side component of the web application, "myFlix". The
+              web application will provide users with the access to information
+              about different movies, directors, and genres. Users will be able
+              to sign up, update their personal information, and create a list
+              of their favorite movies.
             </p>
+            <p>Technologies:</p>
+            <p>HTML, CSS, JS, MongoDB, Express, React, Node.js, deployed to Heroku,
+              documentation generated with JSDoc.</p>
+            <a
+              href="https://github.com/samskaufel/myFlix-API"
+              target="_blank"
+              class="button"
+              >See project on GitHub</a
+            >
           </div>
           <div class="text-box">
+            <img
+              src="img/myFlix-react-main.png"
+              class="myflix-react"
+              alt="screenshot of myflix react application"
+            />
             <h3>myFlix: React</h3>
             <p>
               Using React, I built the client-side for an application called
               myFlix based on its existing server-side code (REST API and
               database). This app allows users to create a profile and displays
-              details about movies, genres, and directors. Users can add movies to
-              a favorites list and change their user information.
+              details about movies, genres, and directors. Users can add movies
+              to a favorites list and change their user information.
             </p>
+            <p>Technologies</p>
+            <p>HTML, JS, MongoDB, Express, React, Node.js, Parcel, React-Redux, Styled With
+              Bootstrap.</p>
+            <a
+              href="https://github.com/samskaufel/myFlix-React-client"
+              target="_blank"
+              class="button"
+              >See project on GitHub</a
+            >
           </div>
           <div class="text-box">
+            <img
+              src="img/myFlix-angular-main.png"
+              class="myflix-angular"
+              alt="screenshot of myflix angular application"
+            />
             <h3>myFlix: Angular</h3>
             <p>
               Using Angular, I built the client-side for the same application,
               myFlix, based on its existing server-side code (REST API and
               database). This app allows users to create a profile and displays
-              details about movies, genres, and directors. Users can add movies to
-              a favorites list and view their profile.
+              details about movies, genres, and directors. Users can add movies
+              to a favorites list and view their profile.
             </p>
+            <p>Technologies:</p>
+            <p>HTML, SCSS, TS, JS, Angular, Node.js, Documentation generated with TypeDoc.</p>
+            <a
+              href="https://github.com/samskaufel/myFlix-Angular-client"
+              target="_blank"
+              class="button"
+              >See project on GitHub</a
+            >
           </div>
           <div class="text-box">
+            <img
+              src="img/chat.jpeg"
+              class="chat"
+              alt="screenshot of mobile chat app"
+            />
+
             <h3>Chat</h3>
             <p>
-              Chat is an app for mobile devices. Built using React Native and optimized 
-              for both iOS and Android devices. Expo was used to develop the app and Google 
-              Firestore is used to store the chat messages. The app will provide users with 
-              a chat interface and options to share images and their location.
+              Chat is an app for mobile devices. Built using React Native and
+              optimized for both iOS and Android devices. Expo was used to
+              develop the app and Google Firestore is used to store the chat
+              messages. The app will provide users with a chat interface and
+              options to share images and their location.
             </p>
+            <p>Technologies:</p>
+            <p>React Native, Expo / Expo Go, Google Firestore Database, Gifted Chat, Android
+            Studio.</p>
+            <a
+              href="https://github.com/samskaufel/chat"
+              target="_blank"
+              class="button"
+              >See project on GitHub</a
+            >
           </div>
           <!-- <div class="text-box">
             <h3>Meet</h3>
@@ -109,22 +188,28 @@
         </div>
       </div>
     </section>
-  
+
     <section id="contact">
       <div class="container reveal">
         <h2>Contact</h2>
-        <div class="text-container">
-          <div class="text-box">
-            <h3>Ways to connect</h3>
-            <a href="https://github.com/samskaufel" class="github-icon" target="_blank">GitHub</a>
-            <br />
-            <a href="https://www.linkedin.com/in/samantha-skaufel-b09149178/" class="linkedin-icon" target="_blank">LinkedIn</a>
-            <p>samskaufel@gmail.com</p>
-            <p>425.879.5220</p>
-          </div>
-        </div>
+        <br />
+        <a
+          href="https://github.com/samskaufel"
+          class="github-icon"
+          target="_blank"
+          >GitHub</a
+        >
+        <br />
+        <a
+          href="https://www.linkedin.com/in/samantha-skaufel-b09149178/"
+          class="linkedin-icon"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <p>samskaufel@gmail.com</p>
+        <p>425.879.5220</p>
       </div>
     </section>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

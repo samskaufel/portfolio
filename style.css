@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+:root {
+  --color-greengray: #ebebde;
+  --color-green: #777764;
+  --color-darkgray: #4f4747;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,27 +24,31 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #42455a;
+  background-color: var(--color-greengray);
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #00c2cb;
 }
 header nav a {
   padding: 10px 20px;
-  font-size: 2rem;
-  color: #e0ffff;
-  border-radius: 5px;
-  letter-spacing: 0.5px;
+  font-size: 20px;
+  color: var(--color-green);
+  letter-spacing: 4px;
 }
 header nav a:hover,
 header nav a.active {
-  background: #00c2cb;
-  color: #42455a;
   transition: 0.5s ease-out;
-  letter-spacing: 2px;
+  color: var(--color-darkgray);
 }
+
+.profile-portrait {
+ border-radius: 50%;
+ max-width: 200px;
+ float: left;
+ margin: 30px;
+}
+
 body {
-  background: #42455a;
+  background: var(--color-greengray);
 }
 section {
   min-height: 100vh;
@@ -46,22 +56,39 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: var(--color-green);
+  border-radius: 8px;
+  opacity: 80%;
+  height: 700px;
+  width: 400px;
+  margin: 10px;
+  padding: 0px;
+}
+
 section:nth-child(1) {
-  color: #e0ffff;
+  color: var(--color-greengray);
 }
 section:nth-child(2) {
-  color: #42455a;
-  background: #e0ffff;
+  color: var(--color-darkgray);
+  background: var(--color-greengray);
 }
 section:nth-child(3) {
-  color: #e0ffff;
+  color: var(--color-darkgray);
 }
 section:nth-child(4) {
-  color: #42455a;
-  background: #e0ffff;
+  color: var(--color-greengray);
+  background: var(--color-greengray);
 }
 section:nth-child(5) {
-  color: #e0ffff;
+  color: var(--color-darkgray);
 }
 section .container {
   margin: 100px;
@@ -70,23 +97,18 @@ section h1 {
   font-size: 3rem;
   margin: 20px;
 }
-section h2 {
+h2 {
   font-size: 40px;
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 section .text-container {
   display: flex;
 }
-section .text-container .text-box {
-  margin: 20px;
-  padding: 20px;
-  background: #00c2cb;
-}
+
 section .text-container .text-box h3 {
   font-size: 30px;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -110,4 +132,25 @@ section .text-container .text-box h3 {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.pokedex {
+  width: 400px;
+}
+
+.myflix-react {
+  width: 400px;
+}
+
+.myflix-angular {
+  width: 400px;
+}
+
+.chat {
+  width: 400px;
+  display: flex;
+}
+
+img {
+  border-radius: 8px 8px 0px 0px;
 }
