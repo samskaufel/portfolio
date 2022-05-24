@@ -49,12 +49,17 @@ header nav a.active {
 
 body {
   background: var(--color-greengray);
+  height: 100vh;
+  width: 100%;
 }
+
 section {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 20%;
+  padding: 0px 10px;
   
 }
 section:nth-child(1) {
@@ -79,27 +84,34 @@ section .container {
 }
 section h1 {
   font-size: 3rem;
-  margin: 20px;
+  /*margin: 20px;*/
 }
 h2 {
   font-size: 40px;
   text-align: center;
   letter-spacing: 10px;
   color: var(--color-darkgray);
+  margin-bottom: 10px;
 }
 section .text-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  gap: 1em;
+  align-items: center;
 }
 section .text-container .text-box {
   display: grid;
-  margin: 10px;
-  padding: 0px;
+  grid-template: 220px 1fr / 1fr;
+  align-content: stretch;
+  justify content: space-around;
+  margin: 20px;
+  /*padding: 0px;*/
   background: var(--color-green);
   border-radius: 8px;
   opacity: 80%;
-  height: 700px;
-  width: 400px;
-  
+  min-height: 100%;
+  /*width: 400px;*/
 }
 section .text-container .text-box h3 {
   font-size: 30px;
@@ -129,6 +141,7 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 
+/*
 .pokedex {
   width: 400px;
 }
@@ -145,9 +158,13 @@ section .text-container .text-box h3 {
   width: 400px;
   display: flex;
 }
+*/
 
-img {
+section .text-container .text-box img {
   border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .button {
