@@ -15,10 +15,6 @@
 a {
   text-decoration: none;
 }
-ul {
-  list-style: none;
-  margin: auto;
-}
 
 p {
   margin: 10px 20px;
@@ -172,7 +168,7 @@ section .text-container .text-box img {
   border: 2px solid var(--color-greengray);
 }
 
-.socials {
+.contact {
   transition-duration: 0.4s;
   background-color: var(--color-darkgray);
   color: var(--color-greengray);
@@ -181,13 +177,13 @@ section .text-container .text-box img {
   border: 2px solid var(--color-darkgray);
   max-height: 40px;
   padding: 10px;
-  max-width: 80px;
+  max-width: 200px;
   margin: auto;
   justify-content: center;
   display: flex;
 }
 
-.socials:hover {
+.contact:hover {
   color: var(--color-greengray);
   background-color: var(--color-green);
   cursor: pointer;
