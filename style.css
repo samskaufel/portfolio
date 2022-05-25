@@ -18,6 +18,11 @@ a {
 ul {
   list-style: none;
 }
+
+p {
+  margin: 10px 20px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -41,10 +46,10 @@ header nav a.active {
 }
 
 .profile-portrait {
- border-radius: 50%;
- height: 200px;
- float: left;
- margin: 30px;
+  border-radius: 50%;
+  height: 200px;
+  float: left;
+  margin: 30px;
 }
 
 body {
@@ -58,9 +63,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20%;
   padding: 0px 10px;
-  
 }
 section:nth-child(1) {
   color: var(--color-greengray);
@@ -84,14 +87,14 @@ section .container {
 }
 section h1 {
   font-size: 3rem;
-  /*margin: 20px;*/
+  margin: 20px;
 }
 h2 {
   font-size: 40px;
   text-align: center;
   letter-spacing: 10px;
   color: var(--color-darkgray);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 section .text-container {
   display: grid;
@@ -104,19 +107,18 @@ section .text-container .text-box {
   display: grid;
   grid-template: 220px 1fr / 1fr;
   align-content: stretch;
-  justify content: space-around;
+  justify-content: space-around;
   margin: 20px;
-  /*padding: 0px;*/
+  padding: 20px;
   background: var(--color-green);
   border-radius: 8px;
   opacity: 80%;
   min-height: 100%;
-  /*width: 400px;*/
 }
 section .text-container .text-box h3 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 10px;
+  margin: auto;
 }
 
 @media (max-width: 900px) {
@@ -141,27 +143,8 @@ section .text-container .text-box h3 {
   opacity: 1;
 }
 
-/*
-.pokedex {
-  width: 400px;
-}
-
-.myflix-react {
-  width: 400px;
-}
-
-.myflix-angular {
-  width: 400px;
-}
-
-.chat {
-  width: 400px;
-  display: flex;
-}
-*/
-
 section .text-container .text-box img {
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px;
   width: 100%;
   object-fit: cover;
   height: 100%;
@@ -185,5 +168,27 @@ section .text-container .text-box img {
   color: var(--color-greengray);
   background-color: var(--color-green);
   cursor: pointer;
-  border: 2px solid var(--color-greengray)
+  border: 2px solid var(--color-greengray);
+}
+
+.socials {
+  transition-duration: 0.4s;
+  background-color: var(--color-darkgray);
+  color: var(--color-greengray);
+  border-radius: 30px;
+  font-size: 14px;
+  border: 2px solid var(--color-darkgray);
+  max-height: 40px;
+  padding: 10px;
+  max-width: 80px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.socials:hover {
+  color: var(--color-greengray);
+  background-color: var(--color-green);
+  cursor: pointer;
+  border: 2px solid var(--color-greengray);
 }
