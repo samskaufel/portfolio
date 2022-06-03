@@ -170,11 +170,9 @@ section .text-container .text-box img {
 
 
 .contact {
-  transition-duration: 0.4s;
   padding: 10px;
   margin: auto;
 }
 .contact:hover {
-  
   cursor: pointer;
 }
