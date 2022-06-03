@@ -168,24 +168,13 @@ section .text-container .text-box img {
   border: 2px solid var(--color-greengray);
 }
 
+
 .contact {
   transition-duration: 0.4s;
-  background-color: var(--color-darkgray);
-  color: var(--color-greengray);
-  border-radius: 30px;
-  font-size: 14px;
-  border: 2px solid var(--color-darkgray);
-  max-height: 40px;
   padding: 10px;
-  max-width: 200px;
   margin: auto;
-  justify-content: center;
-  display: flex;
 }
-
 .contact:hover {
-  color: var(--color-greengray);
-  background-color: var(--color-green);
+  
   cursor: pointer;
-  border: 2px solid var(--color-greengray);
 }
