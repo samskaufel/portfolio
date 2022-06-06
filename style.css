@@ -168,11 +168,20 @@ section .text-container .text-box img {
   border: 2px solid var(--color-greengray);
 }
 
-
 .contact {
   padding: 10px;
   margin: auto;
 }
+
 .contact:hover {
   cursor: pointer;
+}
+
+.resume {
+  color: var(--color-darkgray);
+  font-style: italic;
+}
+
+.resume:hover {
+  text-decoration: underline;
 }
