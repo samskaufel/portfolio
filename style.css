@@ -18,6 +18,7 @@ a {
 
 p {
   margin: 10px 20px;
+  font-size: 18px;
 }
 
 header {
@@ -185,4 +186,35 @@ section .text-container .text-box img {
 
 .resume:hover {
   text-decoration: underline;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: var(--color-darkgray);
+  color: var(--color-greengray);
+  box-shadow: 2px 2px 2px var(--color-green);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 13px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.skill-icons {
+  margin: 160px 0px 0px 0px;
+  text-align: center;
 }
